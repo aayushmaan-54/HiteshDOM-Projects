@@ -1,0 +1,65 @@
+:root {
+    --bg-color: #222;
+    --bg-grad: repeating-linear-gradient(
+        to bottom,
+        transparent 7px,
+        rgba(0, 0, 0, 0.8) 9px,
+        rgba(0, 0, 0, 0.8) 13px,
+        transparent 13px
+    );;
+    --color: #fff6a9;
+    --text-shadow1: #ffa500;
+    --text-shadow2: #ff0000;
+    --text-shadow3: #ff8d00;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    background-color: var(--bg-color);
+    background-image: var(--bg-grad);
+    padding: 2vw;
+    height: 100vh;
+    overflow-y: hidden;
+    text-shadow: 0 0 5px var(--text-shadow1), 0 0 15px var(--text-shadow1), 0 0 20px var(--text-shadow1), 0 0 40px var(--text-shadow1), 0 0 60px var(--text-shadow2), 0 0 10px var(--text-shadow3), 0 0 98px var(--text-shadow2);
+    color: var(--color);
+    animation: blink 12s infinite;
+}
+
+
+@keyframes blink {
+    20%,
+    24%,
+    55% {
+        color: #111;
+        text-shadow: none;
+    }
+
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    54%,
+    56%,
+    100% {
+        text-shadow: 0 0 5px var(--text-shadow1), 0 0 15px var(--text-shadow1), 0 0 20px var(--text-shadow1), 0 0 40px var(--text-shadow1), 0 0 60px var(--text-shadow2), 0 0 10px var(--text-shadow3), 0 0 98px var(--text-shadow2);
+        color: var(--color);
+    }
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+.clock {
+    margin-bottom: 2vw;
+    font-size: 10vw;
+}

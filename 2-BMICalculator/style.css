@@ -1,0 +1,80 @@
+:root {
+    --bg-color: #222222;
+    --box-bg_color: rgba(1, 204, 220, 0.16);;
+    --font-color: #03d0ff;
+    --border-color: rgba(6, 241, 226, 0.81);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    text-shadow: 2px 1px #00040a;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+main {
+    background-color: var(--box-bg_color);
+    border: 1px solid var(--border-color);
+    box-shadow: 4px 6px 6px -1px rgba(0,0,0,0.75);
+    padding: 2em 3em;
+}
+
+
+.result_guide {
+    text-align: center;
+}
+
+main h1 {
+    text-align: center;
+}
+
+
+.result {
+    font-size: 2em;
+    margin-top: 1em;
+}
+
+
+.height_input {
+    margin: 1em 0 1em 0;
+}
+
+
+.weight_input {
+    margin: 1em 0 2em 0;
+}
+
+
+.calculate_btn {
+    width: fit-content;
+    margin-bottom: 2em;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 0.5em 1.5em;
+    font-size: 1em;
+    color: var(--font-color);
+    font-weight: 900;
+    background-color: var(--box-bg_color);
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgba(1, 204, 220, 0.56);
+        color: #fff;
+    }
+}

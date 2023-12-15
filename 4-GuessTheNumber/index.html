@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Guess the number 🤨</title>
+</head>
+<body>
+    <main>
+        <h1 class="heading">Guess the number</h1>
+        <p class="instruction">Try and guess a random number between 1 and 20</p>
+        <div class="input_container">
+            <input id="guess" type="number" value="0" class="guessInput" min="0" max="20">
+            <button class="guess_button" onclick="getValue()">Guess</button>
+        </div>
+        <p class="prev_guess">Previous Guess: <span class="prev_guessValue"></span></p>
+        <p class="remain_guess">Guess Remaining: <span class="remain_guessValue"></span></p>
+    </main>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>DOM Crud 📌</title>
+</head>
+<body>
+    <section class="container">
+        <form id="book-form">
+            <div>
+                <label for="title">Book Title</label>
+                <input type="text" id="title" />
+            </div>
+            <div>
+                <label for="author">Book Author</label>
+                <input type="text" id="author" />
+            </div>
+            <div>
+                <label for="year">Published Year</label>
+                <input type="number" id="year" />
+            </div>
+            <button type="submit" class="btn">Add Book</button>
+        </form>
+
+        <section class="table">
+            <section class="table-section">
+                <div>Title</div>
+                <div>Author</div>
+                <div>Year</div>
+        </section>
+
+        <section id="book-list">
+            <table class="books">
+                
+            </table>
+        </section>
+        </section>
+    </section>
+</body>
+</html>

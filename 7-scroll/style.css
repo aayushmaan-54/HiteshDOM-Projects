@@ -1,0 +1,57 @@
+body {
+    background-color: black;
+    color: white;
+    margin: 2em 5em;
+    overflow-x: hidden;
+}
+
+.para {
+    margin-bottom: 4em;
+    border: 2px solid white;
+    padding: 1em 2em;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+
+.scroll-left {
+    transform: translateX(-200px);
+    opacity: 0;
+}
+
+
+.scroll-right {
+    transform: translateX(200px);
+    opacity: 0;
+}
+
+
+.scroll-rotate {
+    transform: translateY(-200px) rotate(360deg);
+    opacity: 0;
+}
+
+
+.scroll-bottom {
+    transform: translateY(200px) scaleX(3);
+    opacity: 0;
+}
+
+
+.scroll-loading {
+    text-align: center;
+}
+
+
+.active{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+.scroll h1 {
+    font-size: 3em;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    vertical-align: middle;
+}

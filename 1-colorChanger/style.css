@@ -1,0 +1,80 @@
+:root {
+    --color1: #eb4334;
+    --color2: #55eb34;
+    --color3: #3464eb;
+    --color4: #6e34eb;
+    --bg-color: #2e2e2e;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+
+p {
+    font-size: 2em;
+    font-weight: 900;
+    text-align: center;
+}
+
+
+.box {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+
+.box1 {
+    background-color: var(--color1);
+}
+
+.box2 {
+    background-color: var(--color2);
+}
+
+.box3 {
+    background-color: var(--color3);
+}
+
+.box4 {
+    background-color: var(--color4);
+}
+
+.box5 {
+    background: url(bg.jpg);
+    background-size: cover;
+}
+
+
+.restart {
+    background-color: #fff;
+    border: 2px solid black;
+    padding: 0.5em 1.5em;
+    border-radius: 3px;
+    text-decoration: none;
+    color: var(--bg-color);
+}

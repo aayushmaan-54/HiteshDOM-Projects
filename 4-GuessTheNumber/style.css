@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+
+:root {
+    --bg-color: #242424;
+    --bg-win-color: #3de23d;
+    --bg-loose-color: #f53f3f;
+    --font-black: #242424;
+    --font-white: #fff;
+}
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'VT323', monospace;
+    background-color: var(--bg-color);
+    color: var(--font-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+input,
+button {
+    font-family: inherit;
+}
+
+
+.heading {
+    font-size: 5.5vw;
+}
+
+
+.instruction {
+    font-size: 3vw;
+}
+
+
+.guessInput {
+    font-size: 4em;
+    width: 1.3em;
+}
+
+
+.guess_button {
+    font-size: 3em;
+    background-color: transparent;
+    color: #fff;
+    padding: 0 1em;
+}
+
+.prev_guess,
+.remain_guess {
+    font-size: 2em;
+}
+
+.input_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}

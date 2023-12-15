@@ -1,0 +1,24 @@
+:root {
+    --bg-color: rgb(0, 1, 36);
+    --black: #000;
+    --white: #fff;
+}
+
+body {
+    font-family: cursive;
+    font-size: 1.5em;
+    background-color: #000124;
+    color: var(--white);
+}
+
+
+button {
+    font-family: inherit;
+    
+    color: var(--bg-color);
+    font-size: 1em;
+    font-weight: 900;
+    padding: 0.5em 2.5em;
+    cursor: pointer;
+    background-color: var(--white);
+}

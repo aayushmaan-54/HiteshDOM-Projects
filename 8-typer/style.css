@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body {
+    background-color: black;
+    color: yellow;
+    min-height: 100vh;
+    font-family: 'Courier Prime', monospace;
+    font-family: 'Source Code Pro', monospace;
+}
+
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 2em;
+    margin: 0 3em;
+}
+
+
+.typing {
+    position: relative;
+    text-shadow: rgba(39,235,39,1) 0px 0px 25px;
+    font-weight: 400;
+    color: rgb(39, 235, 39);
+}
+
+
+.cursor {
+    color: rgb(39, 235, 39);
+    font-weight: 500;
+    animation: blink 0.7s infinite;
+}
+
+
+@keyframes blink {
+    0%, 
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

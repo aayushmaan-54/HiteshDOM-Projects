@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+    --bg-color: #272935;
+    --white: #fff;
+    --off-white: #ffffffa1;
+    --done: #52F97C;
+    --purple: #8c52f9;
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Code Pro', monospace;
+    background-color: var(--bg-color);
+    color: var(--white);
+}
+
+
+::selection {
+    background-color: var(--purple);
+    color: var(--bg-color);
+}
+
+
+.keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5em;
+    gap: 1em;
+    flex-shrink: 0;
+}
+
+.key {
+    font-size: 1.2em;
+    padding: 1em 1em;
+    border: 1px solid var(--white);
+    border-radius: 4px;
+
+    &:hover {
+        cursor: pointer;
+        background-color: var(--purple);
+    }
+}
+
+main {
+    margin: 10vw;
+}
+
+
+.keyInfo {
+    font-size: 2em;
+    margin-top: 4em;
+    text-align: center;
+}
+
+
+.done {
+    background-color: var(--done);
+    color: var(--bg-color);
+    border-color: var(--done);
+}
